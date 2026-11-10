@@ -36,6 +36,9 @@ Remote access runs through a Cloudflare tunnel with host and origin checks and r
 ## Tech stack
 Python · Django 5.2 LTS · PostgreSQL + pgvector · django-q2 · MCP/FastMCP · Documenso · Docker · pytest (about 1,900 tests against PostgreSQL)
 
+## More
+Design decisions in detail: [docs/architektur.md](docs/architektur.md)
+
 ## Code excerpts
 Not runnable on their own; they show how the safety concept is built ([`code/assistant`](code/assistant)):
 - `models.py` – audit log of tool calls and drafts that expire and can be used once (prepare → confirm)
@@ -70,6 +73,9 @@ Ein Django-CRM für die Personalvermittlung. Bedient wird per **Sprache oder Tex
 
 ### Technik
 Python · Django 5.2 LTS · PostgreSQL + pgvector · django-q2 · MCP/FastMCP · Documenso · Docker · pytest (ca. 1.900 Tests gegen PostgreSQL)
+
+### Mehr
+Entwurfsentscheidungen im Detail: [docs/architektur.md](docs/architektur.md)
 
 ### Code-Auszüge
 Nicht für sich lauffähig; sie zeigen den Aufbau des Sicherheitskonzepts ([`code/assistant`](code/assistant)):
