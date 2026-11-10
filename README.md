@@ -36,6 +36,13 @@ Remote access runs through a Cloudflare tunnel with host and origin checks and r
 ## Tech stack
 Python · Django 5.2 LTS · PostgreSQL + pgvector · django-q2 · MCP/FastMCP · Documenso · Docker · pytest (about 1,900 tests against PostgreSQL)
 
+## Code excerpts
+Not runnable on their own; they show how the safety concept is built ([`code/assistant`](code/assistant)):
+- `models.py` – audit log of tool calls and drafts that expire and can be used once (prepare → confirm)
+- `http_app.py` – hardening of the remote MCP endpoint (bearer token, host/origin checks, rate limit)
+- `matching.py` – candidate matching against mandate criteria with synonyms, no embeddings
+- `server.py` – the server instructions for Claude (rules, two-step flow, stop window)
+
 ## Status
 Working prototype with test data. Real personal data is only processed after a data-processing agreement is in place.
 
@@ -63,6 +70,13 @@ Ein Django-CRM für die Personalvermittlung. Bedient wird per **Sprache oder Tex
 
 ### Technik
 Python · Django 5.2 LTS · PostgreSQL + pgvector · django-q2 · MCP/FastMCP · Documenso · Docker · pytest (ca. 1.900 Tests gegen PostgreSQL)
+
+### Code-Auszüge
+Nicht für sich lauffähig; sie zeigen den Aufbau des Sicherheitskonzepts ([`code/assistant`](code/assistant)):
+- `models.py` – Protokoll der Werkzeugaufrufe und Entwürfe, die ablaufen und nur einmal einlösbar sind (prepare → confirm)
+- `http_app.py` – Absicherung des MCP-Fernzugriffs (Bearer-Token, Host-/Origin-Prüfung, Begrenzung)
+- `matching.py` – Kandidaten-Matching gegen Auftragskriterien mit Synonymen, ohne Embeddings
+- `server.py` – die Server-Anweisung für Claude (Regeln, Zweistufigkeit, Stopp-Fenster)
 
 ### Stand
 Funktionsfähiger Prototyp mit Testdaten. Echte Personendaten erst nach Abschluss eines Auftragsverarbeitungsvertrags.
