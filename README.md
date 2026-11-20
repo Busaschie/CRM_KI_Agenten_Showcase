@@ -11,7 +11,9 @@
 |---|---|
 | ![Web interface, light](docs/screenshots/web-light.webp) | ![Web interface, dark](docs/screenshots/web-dark.webp) |
 
-![Admin overview, dark](docs/screenshots/admin-dark.webp)
+| Admin (light) | Admin (dark) |
+|---|---|
+| ![Admin overview, light](docs/screenshots/admin-light.webp) | ![Admin overview, dark](docs/screenshots/admin-dark.webp) |
 
 <img src="docs/screenshots/phone-light.webp" alt="Phone, light" width="210"> <img src="docs/screenshots/phone-dark.webp" alt="Phone, dark" width="210">
 
